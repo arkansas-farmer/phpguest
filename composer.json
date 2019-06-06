@@ -3,10 +3,16 @@
     "description": "A guestbook app",
     "type": "project",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Test Name",
+            "email": "maxwell.christopher@gmail.com"
+        }
+    ],
     "require": {
         "catfan/medoo": "^1.6"
     },
     "require-dev": {
-        "symfony/var-dumper": "^4.2"
+        "symfony/var-dumper": "^4.3"
     }
 }

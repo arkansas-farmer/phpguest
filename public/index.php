@@ -1,16 +1,27 @@
 <?php
 
 require_once '../vendor/autoload.php';
-use Medoo\Medoo;
+//Use Medoo\Medoo;
+//use SitePoint\SitePoint;
+
+$array = [1, "apple", 2, "foo", "bar"];
+dump($array);
 
 $database = new medoo([
     'database_type' => 'sqlite',
     'database_file' => '../storage/database.db'
 ]);
 
+echo "Trying to fix this!!";
+
+$comment = new SitePoint\Comment($database);
+$comment->setEmail('bruno@skvorc.me')
+    ->setName('Bruno Skvorc')
+    ->setComment('It works!')
+    ->setComment('Hooray! Saving comments works!')
+    ->save();
+
 ?>
-
-
 
 <!doctype html>
 <html class="no-js" lang="">
